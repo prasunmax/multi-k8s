@@ -20,3 +20,15 @@ after_success:
   - docker push prasunmax/multi-nginx
   - docker push prasunmax/multi-server
   - docker push prasunmax/multi-worker
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "multi-docker"
+  env: "MultiDocker-env"
+  bucket_name: "elasticbeanstalk-us-east-2-401275114950"
+  bucket_path: "docker-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access:key: $AWS_SECRET_KEY
