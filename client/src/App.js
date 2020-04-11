@@ -10,9 +10,10 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
+          <title>Fibcalculator V2</title>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload. Go to Heaven, you angel.
+            Edit <code>src/App.js</code> and save to reload. Go to Heaven, you angel. in version 2
           </p>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
